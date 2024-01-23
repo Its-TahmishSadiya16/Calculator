@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+
+<body>
+<div class="calculator">
+    <input type="text" placeholder="0" id="display">
+<div>
+    <button onclick="onButtonClick('AC')"  value="AC" class="cleardisplay">AC</button>
+    <button  onclick="onButtonClick('DEL')" value="DEL" class="cleardisplay">DEL</button>
+    <button  onclick="onButtonClick('%')"    class="cleardisplay">%</button>
+    
+    <button onclick="onButtonClick('/')" class="cleardisplay" >/</button>
+</div>
+<div>
+    <button onclick="onButtonClick('7')">7</button>
+    <button onclick="onButtonClick('8')">8</button>
+    <button onclick="onButtonClick('9')">9</button>
+    <button  onclick="onButtonClick('*')"    class="cleardisplay">*</button>
+</div>
+<div>
+    <button onclick="onButtonClick('4')">4</button>
+    <button onclick="onButtonClick('5')">5</button>
+    <button onclick="onButtonClick('6')">6</button>
+    <button onclick="onButtonClick('-')"    class="cleardisplay">-</button>
+</div>
+<div>
+    <button onclick="onButtonClick('3')">3</button>
+    <button onclick="onButtonClick('2')">2</button>
+    <button onclick="onButtonClick('1')" >1</button>
+    <button onclick="onButtonClick('+')"   class="cleardisplay">+</button>
+</div>
+<div>
+    <button  onclick="onButtonClick('00')">00</button>
+    <button onclick="onButtonClick('0')">0</button>
+    <button onclick="onButtonClick('.')">.</button>
+    <button onclick="calculate()" class="calculate">=</button>
+</div>
+</div>
+
+</body>
+
+</html>
